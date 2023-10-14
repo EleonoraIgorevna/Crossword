@@ -1,0 +1,34 @@
+<div
+	class="crossword"
+	
+	[style.--columns]="sizeCrossword.xSize"
+	[style.--rows]="sizeCrossword.ySize"
+>
+
+	<ng-container *ngFor="let row of observableInput | async" >
+		<ng-container *ngFor="let cell of row">
+			<crossword-cell [cell]="cell" (outputCell)='onAdd($event)'>
+			</crossword-cell>
+		</ng-container>
+	</ng-container>
+	
+		<!-- <ng-container *ngFor="let row of observableInput | async" [(ngModel)]="text">
+			<ng-container *ngFor="let cell of row">
+				<crossword-cell [cell]="cell">
+				</crossword-cell>
+			</ng-container>
+		</ng-container> -->
+	
+
+</div>
+
+
+<div class="answers" *ngFor="let object of observableQuestion | async">
+	<tui-textarea formControlName="testValue1">{{object.text}}</tui-textarea>
+	
+</div>
+	<button (click)="showArray()">Отправить результат</button>
+
+<!-- <button (click)="showItem(text)">Ответить</button> -->
+
+

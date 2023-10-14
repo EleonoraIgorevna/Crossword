@@ -1,0 +1,36 @@
+:host {
+	display: block;
+}
+
+.crossword {
+	--columns: 0;
+	--rows: 0;
+	float: left;
+
+	background: radial-gradient(circle, rgba(241, 198, 221, 1) 0%, rgba(183, 214, 250, 0.4962359943977591) 100%);
+	padding: 1rem;
+
+	display: grid;
+	grid-template-columns: repeat(var(--columns), minmax(2rem, auto));
+	border-radius: 0;
+	// grid-template-rows: repeat(var(--rows), auto);
+
+	justify-content: center;
+	// gap: 0.5rem;
+}
+
+.answers {
+	--columns: 0;
+	--rows: 0;
+
+	background: radial-gradient(circle, rgba(241, 198, 221, 1) 0%, rgba(183, 214, 250, 0.4962359943977591) 100%);
+	padding: 1rem;
+
+	display: grid;
+	grid-template-columns: repeat(var(--columns), minmax(2rem, auto));
+	border-radius: 0;
+	// grid-template-rows: repeat(var(--rows), auto);
+
+	justify-content: left;
+	// gap: 0.5rem;
+}

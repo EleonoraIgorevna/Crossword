@@ -1,0 +1,15 @@
+# Use root/example as user/password credentials
+version: "3.1"
+services:
+  mongo:
+    image: mongo:6-jammy
+    restart: always
+    container_name: crossword_db
+    volumes:
+      - crossword_db:/data/db
+    ports:
+      - 8027:27017
+
+
+volumes:
+  crossword_db:

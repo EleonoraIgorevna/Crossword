@@ -1,0 +1,84 @@
+{
+	"questions": [
+		{
+			"number": 1,
+			"direction": "Горизонтально",
+			"startRow": 1,
+			"startCol": 0,
+			"length": 5,
+			"text": "1. Животное-птица из сказки-басни И. А. Крылова"
+		},
+		{
+			"number": 2,
+			"direction": "Вертикально",
+			"startRow": 0,
+			"startCol": 2,
+			"length": 4,
+			"text": "2. За что боролись главные герои 'Игры престолов'?"
+		},
+		{
+			"number": 3,
+			"direction": "Горизонтально",
+			"startRow": 3,
+			"startCol": 2,
+			"length": 3,
+			"text": "3. Колющий, а также рубящий, режущий инструмент, рабочей частью которого является клинок."
+		},
+		{
+			"number": 4,
+			"direction": "Вертикально",
+			"startRow": 3,
+			"startCol": 4,
+			"length": 3,
+			"text": "4. Я майский... Рогат, да не бык. Шесть ног, да все без копыт. Два рога — не бык. Шесть ног и без копыт."
+		},
+		{
+			"number": 5,
+			"direction": "Горизонтально",
+			"startRow": 5,
+			"startCol": 4,
+			"length": 3,
+			"text": "5. Рыба гигант."
+		},
+		{
+			"number": 6,
+			"direction": "Вертикально",
+			"startRow": 1,
+			"startCol": 0,
+			"length": 5,
+			"text": "6. В... ты могучь. Ты гоняешь стаи тучь"
+		},
+		{
+			"number": 7,
+			"direction": "Горизонтально",
+			"startRow": 5,
+			"startCol": 0,
+			"length": 3,
+			"text": "7. Любимый напиток пиратов."
+		},
+		{
+			"number": 8,
+			"direction": "Вертикально",
+			"startRow": 5,
+			"startCol": 2,
+			"length": 4,
+			"text": "8. Кругом вода, а с питьем беда."
+		},
+		{
+			"number": 9,
+			"direction": "Горизонтально",
+			"startRow": 8,
+			"startCol": 2,
+			"length": 3,
+			"text": "9. ...-полоскун."
+		},
+		{
+			"number": 10,
+			"direction": "Вертикально",
+			"startRow": 8,
+			"startCol": 5,
+			"length": 3,
+			"text": "10. Направленное движение электронов"
+		}
+	]
+}

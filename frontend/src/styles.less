@@ -1,0 +1,59 @@
+/* You can add global styles to this file, and also import other style files */
+@import "@taiga-ui/styles/taiga-ui-global";
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+html {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+}
+
+// .tui-input_non-padding input[tuitextfield] {
+// 	padding-top: 0 !important;
+// 	padding-bottom: 0 !important;
+// 	padding-left: 0 !important;
+// 	padding-right: 0 !important;
+// }
+
+// .tui-root {
+// 	margin: 0 auto;
+// 	display: flex;
+// 	width: 100%;
+// 	.shadow(1);
+// 	border-radius: var(--tui-radius-m);
+// 	margin: 100px 100px 100px 100px;
+	// background: radial-gradient(circle, rgba(241, 198, 221, 1) 0%, rgba(183, 214, 250, 0.4962359943977591) 100%);
+// }
+
+// .cross {
+// 	margin: 0 auto;
+// 	display: flex;
+// 	width: 100%;
+// }
+
+@import '@taiga-ui/core/styles/taiga-ui-local.less';
+
+// This goes into global, non-encapsulated styles
+[tuiWrapper][data-appearance='custom'] {
+	background: #bc71c9;
+	color: #fff;
+
+	.wrapper-hover({
+		background: #a381ff;
+	});
+
+.wrapper-active({
+	background: #8f75d1;
+});
+
+.wrapper-disabled({
+	background: #eaecee;
+});
+}

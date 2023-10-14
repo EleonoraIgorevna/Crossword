@@ -1,0 +1,56 @@
+<!-- <ng-container
+	*ngIf="cell !== 0"
+>
+<ng-container *ngIf="cell !== 2; else linkElse">
+	<tui-input
+		class="crossword-cell__input tui-input_non-padding"
+		[maskito]="mask"
+		[(ngModel)]="cell"
+	>
+		<input
+			(input)="inputChange()"
+			tuiTextfield 
+		/>
+	</tui-input>
+	</ng-container>
+	<ng-template #linkElse>
+		<ng-container>
+			<tui-input class="crossword-cell__input tui-input_non-padding" [maskito]="mask" [(ngModel)]="cell"  [disabled]="true">
+				<input (input)="inputChange()" tuiTextfield />
+			</tui-input>
+		</ng-container>
+	</ng-template>
+</ng-container> -->
+
+
+<!-- <ng-container *ngIf="cell.value !== 0">
+	<ng-container *ngIf="cell.value !== 2; else linkElse">
+		<tui-input class="crossword-cell__input tui-input_non-padding" [maskito]="mask" [(ngModel)]="cell.value">
+			<input (input)="inputChange(cell)" tuiTextfield />
+		</tui-input>
+	</ng-container>
+	<ng-template #linkElse>
+		<ng-container>
+			<tui-input class="crossword-cell__input tui-input_non-padding" [maskito]="mask" [(ngModel)]="cell.value"
+				[disabled]="true">
+				<input (input)="inputChange(cell)"  tuiTextfield />
+			</tui-input>
+		</ng-container>
+	</ng-template>
+</ng-container> -->
+
+	<ng-container *ngIf="cell.value !== 0">
+		<ng-container *ngIf="cell.value !== 2; else linkElse">
+			<tui-input class="crossword-cell__input tui-input_non-padding" [maskito]="mask" [(ngModel)]="cell.value">
+				<input (input)="inputSentToParent(cell)" tuiTextfield />
+			</tui-input>
+		</ng-container>
+		<ng-template #linkElse>
+			<ng-container>
+				<tui-input class="crossword-cell__input tui-input_non-padding" [maskito]="mask" [(ngModel)]="cell.value"
+					[disabled]="true">
+					<input (input)="inputSentToParent(cell)" tuiTextfield />
+				</tui-input>
+			</ng-container>
+		</ng-template>
+	</ng-container>
